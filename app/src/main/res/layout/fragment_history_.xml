@@ -1,0 +1,22 @@
+<!-- fragment_history.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Isi layout untuk menampilkan riwayat pertanian atau aktivitas lainnya -->
+    <TextView
+        android:id="@+id/historyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/riwayat_chat_bot"
+        android:textSize="18sp"
+        android:padding="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/historyTextView"
+        android:padding="16dp"/>
+
+</RelativeLayout>
